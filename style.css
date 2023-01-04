@@ -1,0 +1,412 @@
+/* Header */
+.container__menu {
+  max-width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-menu__logo {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-menu__logo .logo {
+  width: 50%;
+  height: 2rem;
+}
+.c-menu__items {
+  display: flex;
+  width: 80vw;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.3rem;
+  margin-right: 4rem;
+}
+.c-menu__items .items {
+  color: var(--color-text-blue);
+  font-size: 1em;
+  font-family: "ArgentumSans-Medium";
+}
+.c-buttom {
+  width: 8rem;
+  height: 2rem;
+  font-family: "ArgentumSans-Medium";
+  border-radius: 15px;
+  letter-spacing: 4px;
+  background-color: var(--color-text-blue);
+  padding: 10px;
+  text-transform: uppercase;
+  color: var(--color-text-white);
+  border: none;
+}
+.c-buttom a {
+  text-transform: uppercase;
+  color: var(--color-text-white);
+}
+
+.container__hero-area {
+  max-width: 100vw;
+  height: 55vh;
+  background-image: url(../assets/bg-header.png);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.c-title__hero-area {
+  width: 25rem;
+  margin-left: 5%;
+  font-size: 2.8rem;
+  font-family: "ArgentumSans-Bold";
+  color: var(--color-text-blue);
+}
+.c-search {
+  margin-top: 15px;
+  margin-left: 5%;
+  width: 15rem;
+  padding: 8px;
+  border: none;
+  border-radius: 15px;
+  font-size: 0.7em;
+}
+.search {
+  margin-top: 15px;
+  margin-left: 5%;
+}
+
+/* Main area  */
+.container__grade {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 512px), 250px;
+  grid-template-areas:
+    "image1 image1  text1 text1"
+    "text2 text2 image2 image2"
+    "image3 image3 text3 text3"
+    "rj rio-ostras caldas-novas amazonia";
+  margin-bottom: 65px;
+}
+.image__grade1 {
+  height: 512px;
+  grid-area: image1;
+  background-image: url(../assets/image-clima-perfeito.png);
+  background-size: cover;
+  background-position: center center;
+}
+.c-gradient__grade {
+  height: 512px;
+  grid-area: text1;
+  background-image: linear-gradient(180deg, #005bd5, #002e6b);
+}
+.c-text__grade {
+  width: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 15%;
+  margin-left: 5%;
+  color: var(--color-text-white);
+}
+.subtitle__grade {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-text-white);
+  font-family: "ArgentumSans-Light";
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+.title__grade {
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+  font-family: "ArgentumSans-Black";
+  color: var(--color-text-white);
+}
+.text__grade {
+  letter-spacing: 0.02rem;
+}
+.c-buttom__agendar {
+  width: 8rem;
+  height: 2rem;
+  font-family: "ArgentumSans-Medium";
+  border: solid 1px white;
+  border-radius: 15px;
+  background-color: #002e6b00;
+}
+.c-buttom__agendar a {
+  text-transform: uppercase;
+  color: var(--color-text-white);
+  letter-spacing: 3px;
+}
+.image__grade2 {
+  height: 512px;
+  grid-area: image2;
+  background-image: url(../assets/image-amigos.png);
+  background-size: cover;
+  background-position: center center;
+}
+.c-white__grade {
+  height: 512px;
+  grid-area: text2;
+  background-color: var(--color-text-white);
+}
+.c-text__grade-blue {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20%;
+  margin-left: 10%;
+  color: var(--color-text-blue);
+}
+.subtitle__grade-blue {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-text-blue);
+  font-family: "ArgentumSans-Light";
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+.title__grade-blue {
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+  font-family: "ArgentumSans-Black";
+  color: var(--color-text-blue);
+}
+.text__grade-blue {
+  letter-spacing: 0.02rem;
+}
+.c-buttom__agendar-blue {
+  width: 8rem;
+  height: 2rem;
+  font-family: "ArgentumSans-Medium";
+  border: solid 1px var(--color-text-blue);
+  border-radius: 15px;
+  background-color: #002e6b00;
+}
+.c-buttom__agendar-blue a {
+  text-transform: uppercase;
+  color: var(--color-text-blue);
+  letter-spacing: 3px;
+}
+.image__grade3 {
+  height: 512px;
+  grid-area: image3;
+  background-image: url(../assets/image-mar-amigos.png);
+  background-size: cover;
+  background-position: center center;
+}
+.c-gradient__grade3 {
+  height: 512px;
+  grid-area: text3;
+  background-image: linear-gradient(180deg, #005bd5, #002e6b);
+}
+
+/* Galeria de Imagens  */
+
+.images__cidades--rj {
+  height: 250px;
+  grid-area: rj;
+  background-image: url(../assets/image-rj.png);
+  background-position: center center;
+}
+.c-buttom__cidades {
+  width: 180px;
+  background: rgba(53, 49, 49, 0.5);
+  box-shadow: 0 8px 40px 0 rgba(63, 63, 73, 0.37);
+  backdrop-filter: blur(13.5px);
+  border: solid white 2px;
+  border-radius: 20px;
+  padding: 8px;
+  position: relative;
+  top: 120px;
+  left: 140px;
+}
+.c-buttom__cidades a {
+  color: white;
+  letter-spacing: 1.3px;
+}
+.images__cidades--rio-ostras {
+  height: 250px;
+  grid-area: rio-ostras;
+  background-image: url(../assets/image-rio-das-ostras.png);
+  background-position: center center;
+}
+.images__cidades--caldas-novas {
+  height: 250px;
+  grid-area: caldas-novas;
+  background-image: url(../assets/image-caldas-novas.png);
+  background-position: bottom center;
+}
+.images__cidades--amazonia {
+  height: 250px;
+  grid-area: amazonia;
+  background-image: url(../assets/image-amazonia.png);
+  background-position: bottom center;
+}
+
+/* Mural de Experiências */
+
+.wrapper__mural {
+  max-width: 930px;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container__title-mural {
+  margin: 60px;
+  text-align: center;
+  color: var(--color-text-gray);
+}
+.hashtag {
+  margin: 5px 0;
+  font-size: 1em;
+  font-family: "ArgentumSans-Medium";
+}
+.title__mural {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 2.2rem;
+  font-family: "ArgentumSans-Bold";
+}
+.container__mural {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.images__mural {
+  max-width: 300px;
+}
+.c-frames__icones {
+  width: 930px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.c-frames {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 170px;
+  background-color: var(--gray);
+  color: var(--color-text-blue);
+}
+.c-frames img {
+  height: 80px;
+}
+.c-frames p {
+  text-align: center;
+  margin-top: 15px;
+  font-family: "ArgentumSans-Bold";
+}
+.c-frames-blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 170px;
+  background-color: var(--color-text-blue);
+  color: var(--color-text-white);
+}
+.c-frames-blue img {
+  height: 80px;
+}
+.c-frames-blue p {
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 0.6px;
+  font-family: "ArgentumSans-Bold";
+}
+footer {
+  max-width: 100vw;
+}
+.container__form-fale {
+  background-color: var(--color-text-blue);
+  margin-top: 100px;
+  height: 50vh;
+}
+.c-form__fale {
+  margin: 0 auto;
+  width: 80vw;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-form__fale h2 {
+  font-family: "ArgentumSans-Bold";
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  color: var(--color-text-white);
+}
+input {
+  width: 330px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 18px;
+}
+textarea {
+  width: 330px;
+  padding: 10px;
+  border: none;
+  border-radius: 18px;
+  color: var(--color-text-gray);
+}
+.c-menu__footer {
+  padding: 50px 0;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "sobre contato beneficios lugares curiosidades";
+}
+.sobre {
+  grid-area: sobre;
+  margin-left: 100px;
+  color: var(--color-text-blue);
+}
+.sobre img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.item__menu {
+  padding: 5px 0;
+}
+.item__menu a {
+  color: var(--color-text-blue);
+  font-family: "ArgentumSans-Medium";
+  font-size: 0.9rem;
+}
+.contato {
+  grid-area: contato;
+  margin-left: 50px;
+}
+.title-footer {
+  font-size: 1.2rem;
+  color: var(--color-text-blue);
+  font-family: "ArgentumSans-Bold";
+  margin-bottom: 25px;
+}
+.beneficios {
+  grid-area: beneficios;
+  margin-left: 50px;
+}
+.lugares {
+  grid-area: lugares;
+  margin-left: 50px;
+}

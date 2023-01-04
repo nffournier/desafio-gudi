@@ -1,0 +1,15 @@
+:root {
+  --color-text-blue: #005bd5;
+  --color-text-white: #ffffff;
+  --color-text-gray: #8b8b8b;
+  --gray: #eeeeee;
+  --blue-dark: #002e6b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ArgentumSans-Light";
+  text-decoration: none;
+  list-style: none;
+}
